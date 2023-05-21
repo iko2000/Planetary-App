@@ -1,13 +1,532 @@
+@font-face {
+  font-family: heading;
+  src: url("./assets//Fonts/SpaceMono-Bold.ttf");
+}
+
+@font-face {
+  font-family: body;
+  src: url("./assets/Fonts/Arvo-Bold.ttf");
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("/src/assets/background-stars.svg");
+  background-image: url('./assets/STARS.jpg');
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+  font-family: heading;
+
+  
+}
+h1 {
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  font-size: 2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  align-items: center;
+  display: flex;
+}
+nav {
+  width: 60%;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.hamburger {
+  display: none;
+}
+ul {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3%;
+}
+li {
+  list-style: none;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Planets */
+
+.planet {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: body;
+
+}
+
+.planetbox {
+  width: 85%;
+  height: 100%;
+ 
+}
+
+.photo {
+  width: 60%;
+  height: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.photo :nth-child(1) {
+  width: 50%;
+}
+
+.margin {
+  margin-top: 100px;
+}
+.multy {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  bottom: 60px;
+}
+.head {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+}
+h2 {
+  font-size: 45px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.info {
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 3%;
+}
+.floor1 {
+  width: 100%;
+  height: 79%;
+
+  display: flex;
+}
+
+.floor2 {
+  width: 100%;
+  height: 21%;
+  
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.description {
+  width: 80%;
+  height: 70%;
+  
+}
+.source {
+  width: 80%;
+  height: 5%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 3%;
+}
+.btns div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.txt {
+  width: 80%;
+}
+
+.statbox {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.statistic {
+  width: 20%;
+  height: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.jupiterphoto {
+  scale: 1.2;
+}
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-size: 16px;
+}
+
+.steps {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.activeMercury {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+
+  background-color: rgb(65, 158, 187);
+}
+
+.activeVenus {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+
+  background-color: rgb(237, 162, 73);
+}
+
+.activeEarth {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+ 
+  background-color: rgb(109, 46, 213);
+}
+
+.activeMars {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+ 
+  background-color: rgb(209, 76, 50);
+}
+
+.activeJupiter {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgb(216, 58, 52);
+}
+
+.activeSaturn {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgb(205, 81, 32);
+}
+
+.activeUranus {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+ 
+  background-color: rgb(30, 193, 162);
+}
+
+.activeNeptune {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+ 
+  background-color: rgb(45, 104, 240);
+}
+
+.pioner {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.seconder {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10%;
+}
+.burgershow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.burdiv {
+  width: 100%;
+}
+.burgershow img {
+  width: 20px;
+  height: 20px;
+}
+.burgershow a {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.positioner {
+  width: 20%;
+  display: flex;
+  
+  align-items: center;
+  gap: 10%;
+}
+.directioner {
+  width: 10px;
+  color: black;
+
+}
+@media only screen and (max-width: 1034px) {
+  
+  header {
+    display: flex;
+    height: 6rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  h1 {
+    height: 2.5rem;
+    width: 300px;
+  }
+
+  nav {
+    height: 3rem;
+    width: 100%;
+    border-bottom: 1px solid blueviolet;
+  }
+  ul {
+    justify-content: center;
+    gap: 5%;
+  }
+  .planet {
+    height: 140vh;
+  }
+  .planetbox {
+    width: 90%;
+    height: 100%;
+  }
+  .floor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .photo {
+    width: 90%;
+    height: 50%;
+  }
+  .info {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+  .seconder {
+    height: 150px;
+  }
+  .btns {
+    height: 100%;
+    gap: 5%;
+  }
+  .photo :nth-child(1) {
+    scale: 0.5;
+  }
+  .pioner {
+    height: 100%;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .floor2 {
+    height: 100px;
+  }
+  .statistic {
+    padding: 5px;
+  }
+  .multy {
+    bottom: 110px;
+    scale: 0.8;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  body {
+    background-color: greenyellow;
+  }
+  .multy {
+    scale: 0.5;
+  }
+  header {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  h1 {
+    width: 50%;
+    height: 2rem;
+    margin-left: 10%;
+    font-size: 20px;
+  }
+  nav {
+    display: none;
+  }
+  .planetbox {
+    width: 100%;
+    height: 100%;
+  }
+  .floor1 {
+    flex-direction: column-reverse;
+    width: 100%;
+  
+    height: 135vh;
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50%;
+  }
+  .seconder {
+    width: 100%;
+    height: 30px;
+    gap: 2%;
+  }
+  .btns {
+    width: 100%;
+    font-size: 10px;
+    flex-direction: row;
+    gap: 1%;
+  }
+  .btns div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+  }
+  .btns p {
+    font-size: 10px;
+  }
+  .btns p:nth-child(1) {
+    display: none;
+  }
+  .margin {
+    margin-top: 0px;
+  }
+  img {
+    overflow: auto;
+  }
+  .photo :nth-child(1) {
+    width: 90%;
+  }
+  .photo {
+    width: 100%;
+    height: 50%;
+  }
+  .info {
+    height: 70%;
+  }
+  .multy {
+    bottom: 100px;
+  }
+  .planet {
+    height: 120vh;
+  }
+  .floor2 {
+    width: 100%;
+    height: 30vh;
+    margin-top: 30px;
+
+  }
+  .statbox {
+    flex-direction: column;
+    gap: 10%;
+  }
+  .statistic {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid white;
+    color: white;
+  }
+  .hamburger {
+    display: flex;
+  }
 }
