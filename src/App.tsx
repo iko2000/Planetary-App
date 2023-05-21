@@ -29,6 +29,7 @@ import direction from "./assets/icon-chevron.svg";
 
 function App() {
   const [isburger, setIsburger] = useState<any>(false);
+  const [page, setPage] = useState(1);
 
   return (
     <>
@@ -47,28 +48,44 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/Mercury"> Mercury</Link>
+              <Link to="/Mercury" onClick={() =>{
+                setPage(1)
+              }} className={page === 1 ? 'activated' : ''}> Mercury</Link>
             </li>
             <li>
-              <Link to="/Venus"> Venus</Link>
+              <Link to="/Venus" onClick={() =>{
+                setPage(2)
+              }}  className={page === 2 ? 'activated' : ''}> Venus</Link>
             </li>
             <li>
-              <Link to="/Earth"> Earth</Link>
+              <Link to="/Earth" onClick={() =>{
+                setPage(3)
+              }} className={page === 3 ? 'activated' : ''}> Earth</Link>
             </li>
             <li>
-              <Link to="/Mars"> Mars</Link>
+              <Link to="/Mars" onClick={() =>{
+                setPage(4)
+              }}  className={page === 4 ? 'activated' : ''}> Mars</Link>
             </li>
             <li>
-              <Link to="/Jupiter"> Jupiter</Link>
+              <Link to="/Jupiter" onClick={() =>{
+                setPage(5)
+              }}  className={page === 5 ? 'activated' : ''}> Jupiter</Link>
             </li>
             <li>
-              <Link to="/Saturn"> Saturn</Link>
+              <Link to="/Saturn" onClick={() =>{
+                setPage(6)
+              }}  className={page === 6 ? 'activated' : ''}> Saturn</Link>
             </li>
             <li>
-              <Link to="/Uranus"> Uranus</Link>
+              <Link to="/Uranus"  onClick={() =>{
+                setPage(7)
+              }} className={page === 7 ? 'activated' : ''}> Uranus</Link>
             </li>
             <li>
-              <Link to="/Neptune"> Neptune</Link>
+              <Link to="/Neptune"  onClick={() =>{
+                setPage(8)
+              }} className={page === 8 ? 'activated' : ''}> Neptune</Link>
             </li>
           </ul>
         </nav>
@@ -77,43 +94,59 @@ function App() {
         <div className="burgershow">
           <div className="burdiv">
             <li>
-              <Link to="/Mercury"><div className="positioner"><img src={mercury1}/> Mercury </div> <img className="directioner" src={direction}/> </Link>
+              <Link onClick={() =>{
+                setPage(1)
+              }} className={page === 1 ? 'activated' : ''} to="/Mercury"><div className="positioner"><img src={mercury1}/> Mercury </div> <img className="directioner" src={direction}/> </Link>
             </li>
           </div>
           <div className="burdiv">
             <li>
-              <Link to="/Venus"><div className="positioner"><img src={venus1}/> Venus </div><img className="directioner" src={direction}/> </Link>
+              <Link onClick={() =>{
+                setPage(2)
+              }} className={page === 2 ? 'activated' : ''} to="/Venus"><div className="positioner"><img src={venus1}/> Venus </div><img className="directioner" src={direction}/> </Link>
             </li>
           </div>
           <div className="burdiv">
             {" "}
             <li>
-              <Link to="/Earth"><div className="positioner"><img src={earth1}/> Earth </div> <img className="directioner" src={direction}/></Link>
+              <Link onClick={() =>{
+                setPage(3)
+              }} className={page === 3 ? 'activated' : ''} to="/Earth"><div className="positioner"><img src={earth1}/> Earth </div> <img className="directioner" src={direction}/></Link>
             </li>
           </div >
           <div className="burdiv">
             <li>
-              <Link to="/Mars"><div className="positioner"><img src={mars1}/> Mars </div> <img className="directioner" src={direction}/></Link>
+              <Link onClick={() =>{
+                setPage(4)
+              }} className={page === 4 ? 'activated' : ''} to="/Mars"><div className="positioner"><img src={mars1}/> Mars </div> <img className="directioner" src={direction}/></Link>
             </li>
           </div>
           <div className="burdiv">
             <li>
-              <Link to="/Jupiter"><div className="positioner"><img src={jupiter1}/> Jupiter </div> <img className="directioner" src={direction}/></Link>
+              <Link onClick={() =>{
+                setPage(5)
+              }} className={page === 5 ? 'activated' : ''} to="/Jupiter"><div className="positioner"><img src={jupiter1}/> Jupiter </div> <img className="directioner" src={direction}/></Link>
             </li>
           </div>
           <div className="burdiv">
             <li>
-              <Link to="/Saturn"><div className="positioner"><img src={saturn1}/> Saturn </div> <img className="directioner" src={direction}/></Link>
+              <Link onClick={() =>{
+                setPage(6)
+              }} className={page === 6 ? 'activated' : ''} to="/Saturn"><div className="positioner"><img src={saturn1}/> Saturn </div> <img className="directioner" src={direction}/></Link>
             </li>
           </div>
           <div className="burdiv">
             <li>
-              <Link to="/Uranus"> <div className="positioner"><img src={uranus1}/> Uranus </div><img className="directioner" src={direction}/></Link>
+              <Link onClick={() =>{
+                setPage(7)
+              }} className={page === 7 ? 'activated' : ''} to="/Uranus"> <div className="positioner"><img src={uranus1}/> Uranus </div><img className="directioner" src={direction}/></Link>
             </li>
           </div>
           <div className="burdiv">
             <li>
-              <Link to="/Neptune"> <div className="positioner"><img src={neptune1}/> Neptune </div><img className="directioner" src={direction}/> </Link>
+              <Link onClick={() =>{
+                setPage(8)
+              }} className={page === 8 ? 'activated' : ''} to="/Neptune"> <div className="positioner"><img src={neptune1}/> Neptune </div><img className="directioner" src={direction}/> </Link>
             </li>
           </div>
         </div >
