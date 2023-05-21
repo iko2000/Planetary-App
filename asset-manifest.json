@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Planetary-App/static/css/main.14165762.css",
-    "main.js": "/Planetary-App/static/js/main.bad3581f.js",
+    "main.css": "/Planetary-App/static/css/main.f9aa4f38.css",
+    "main.js": "/Planetary-App/static/js/main.4e3e89d5.js",
     "static/media/STARS.jpg": "/Planetary-App/static/media/STARS.6baa6a8da136455489da.jpg",
     "static/media/SpaceMono-Bold.ttf": "/Planetary-App/static/media/SpaceMono-Bold.2d0dbf42750207f78ffa.ttf",
     "static/media/geology-mercury.png": "/Planetary-App/static/media/geology-mercury.aa6732c318454e3fc480.png",
@@ -34,11 +34,11 @@
     "static/media/icon-source.svg": "/Planetary-App/static/media/icon-source.90231c6845b7449a736412f3da2e3aaa.svg",
     "static/media/icon-hamburger.svg": "/Planetary-App/static/media/icon-hamburger.05a40a49142005f6faf230286ab38214.svg",
     "static/media/icon-chevron.svg": "/Planetary-App/static/media/icon-chevron.8915cee97f993fb990aac66c578ad575.svg",
-    "main.14165762.css.map": "/Planetary-App/static/css/main.14165762.css.map",
-    "main.bad3581f.js.map": "/Planetary-App/static/js/main.bad3581f.js.map"
+    "main.f9aa4f38.css.map": "/Planetary-App/static/css/main.f9aa4f38.css.map",
+    "main.4e3e89d5.js.map": "/Planetary-App/static/js/main.4e3e89d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.14165762.css",
-    "static/js/main.bad3581f.js"
+    "static/css/main.f9aa4f38.css",
+    "static/js/main.4e3e89d5.js"
   ]
 }
